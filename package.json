@@ -12,7 +12,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "format": "prettier --list-different --write \"**/*.{ts,tsx,html,json,js}\""
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +40,7 @@
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "prettier": "^2.4.1",
     "typescript": "^4.4.4",
     "web-vitals": "^2.1.2"
   }

@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { AppRoutes } from './AppRoutes';
+import { WeatherStoreProvider } from './stores/WeatherStore';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -14,7 +15,9 @@ const queryClient = new QueryClient({
 const App: FC = () => (
   <BrowserRouter>
     <QueryClientProvider client={queryClient}>
-      <AppRoutes />
+      <WeatherStoreProvider>
+        <AppRoutes />
+      </WeatherStoreProvider>
     </QueryClientProvider>
   </BrowserRouter>
 );

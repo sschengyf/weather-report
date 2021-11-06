@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^4.16.13",
     "axios": "^0.24.0",
     "dayjs": "^1.10.7",
     "history": "^5.0.3",
@@ -15,9 +14,9 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "format": "prettier --list-different --write \"**/*.{ts,tsx,html,json,js}\""
   },
   "eslintConfig": {
@@ -39,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@craco/craco": "^6.4.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -46,7 +46,10 @@
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "autoprefixer": "^9",
+    "postcss": "^7",
     "prettier": "^2.4.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.4.4",
     "web-vitals": "^2.1.2"
   }

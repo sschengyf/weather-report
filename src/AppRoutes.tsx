@@ -1,5 +1,7 @@
 import { useRoutes, Navigate } from 'react-router-dom';
 import { WeatherPage } from './pages/WeatherPage';
+import { WeatherDetailPage } from './pages/WeatherDetailPage';
+import { Error404Page } from './pages/Error404Page';
 
 export const AppRoutes = () => {
   return useRoutes([
@@ -10,6 +12,14 @@ export const AppRoutes = () => {
     {
       path: 'weather',
       element: <WeatherPage />,
+    },
+    {
+      path: 'weather/detail',
+      element: <WeatherDetailPage />,
+    },
+    {
+      path: '*',
+      element: <Error404Page />,
     },
   ]);
 };

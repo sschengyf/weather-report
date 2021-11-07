@@ -14,7 +14,7 @@ export const AppRoutes = () => {
       element: <WeatherPage />,
     },
     {
-      path: 'weather/detail',
+      path: 'weather/:datetime',
       element: <WeatherDetailPage />,
     },
     {

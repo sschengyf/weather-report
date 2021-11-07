@@ -34,6 +34,7 @@ export const WeatherDetailPage: FC = () => {
           </div>
         </>
       )}
+      {!weather && <p className="text-center py-20">There is no weather record.</p>}
     </>
   );
 };

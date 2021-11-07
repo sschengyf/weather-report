@@ -18,7 +18,7 @@ const App: FC = () => (
       <WeatherStoreProvider>
         <div className="container mx-auto">
           <header className="my-8">
-            <Link to="/">
+            <Link to="/" className="hover:text-pink-600">
               <h1 className="text-xl font-bold underline">Weather report for Auckland in 7 days</h1>
             </Link>
           </header>
